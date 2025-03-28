@@ -12,6 +12,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="./assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap-us-aea-en.js"></script>
 </head>
 
 <body class="is-preload">
@@ -21,6 +25,7 @@
 		<ul class="container">
 			<li><a href="#top">Home</a></li>
 			<li><a href="#about">About</a></li>
+			<li><a href="#education">Education</a></li>
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#experience">Experience</a></li>
@@ -40,9 +45,27 @@
 					<header>
 						<h1>Hi. I'm <strong>Fahim Shams</strong></h1>
 					</header>
-					<p>Full Stack Software Engineer </p>
-					<p>Cloud & AI Enthusiast</p>
-					<p>Lifelong Learner</p>
+					<div class="roles">
+						<p class="role"><i class="fas fa-code"></i> Full Stack Software Engineer</p>
+						<p class="role"><i class="fas fa-cloud"></i> Cloud & AI Enthusiast</p>
+						<p class="role"><i class="fas fa-book"></i> Lifelong Learner</p>
+					</div>
+
+
+					<div class="hero-social-icons">
+						<a href="https://www.linkedin.com/in/fis/" class="hero-social-icon" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="https://github.com/fahimshams" class="hero-social-icon" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="#" class="hero-social-icon" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="hero-social-icon" target="_blank">
+							<i class="fab fa-medium"></i>
+						</a>
+					</div>
 
 
 				</div>
@@ -55,23 +78,153 @@
 		<div class="container">
 			<header>
 				<h2>About Me</h2>
-				<!-- <p>Full Stack Engineer | Cloud & AI Enthusiast | Lifelong Learner</p> -->
 			</header>
-			<div class="row aln-center">
-				<div class="col-12">
-					<section class="box style1">
+			<div class="about-container">
+				<!-- Professional Journey -->
+				<section class="about-section">
+					<div class="section-header">
+						<i class="fas fa-laptop-code"></i>
+						<h3>What I Do</h3>
+					</div>
+					<div class="section-content">
+						<p>Hey there! I'm a software developer who loves building websites and apps that people enjoy using. I work with different programming languages and tools to create solutions that are both powerful and user-friendly.</p>
 						
-						<p>I'm a full-stack developer who loves turning ideas into real, working solutions. My passion is building software that's both powerful and easy to use. I work with Python, Java, and cloud tech to create fast, smart applications.</p>
-						
-						<p>What drives me? Solving problems and making things better. Whether it's speeding up an app, designing a smoother experience, or experimenting with AI, I enjoy the challenge of making technology work for people.</p>
+						<p>What gets me excited? I love fixing problems and making things work better. Whether I'm making a website faster or creating a new app feature, I enjoy using technology to help people get things done more easily.</p>
+					</div>
+				</section>
 
-						<p>As a Full Stack Engineer, I see each line of code as a brushstroke in a larger masterpiece. My approach combines analytical thinking with creative problem-solving, whether I'm crafting intuitive user interfaces or architecting robust backend systems. I don't just write code; I build bridges between complex technical challenges and elegant, user-centric solutions.</p>
+				<!-- Personal Interests -->
+				<section class="about-section">
+					<div class="section-header">
+						<i class="fas fa-heart"></i>
+						<h3>When I'm Not Coding</h3>
+					</div>
+					<div class="section-content">
+						<!-- Sports -->
+						<div class="interest-box">
+							<div class="interest-icon">
+								<i class="fas fa-running"></i>
+							</div>
+							<div class="interest-details">
+								<h4>Sports I Love</h4>
+								<div class="tags">
+									<span class="tag">Table Tennis</span>
+									<span class="tag">Badminton</span>
+									<span class="tag">Cricket</span>
+								</div>
+							</div>
+						</div>
 
-						<p>When I'm not coding, I'm learning—exploring new tools, sharing knowledge, and staying curious. Let's build something great together!</p>
+						<!-- Gaming -->
+						<div class="interest-box">
+							<div class="interest-icon">
+								<i class="fas fa-gamepad"></i>
+							</div>
+							<div class="interest-details">
+								<h4>Gaming Time</h4>
+								<div class="tags">
+									<span class="tag">FIFA on PlayStation</span>
+									<span class="tag">Love Competition</span>
+								</div>
+							</div>
+						</div>
 
-						
-					</section>
+						<!-- Travel -->
+						<div class="interest-box">
+							<div class="interest-icon">
+								<i class="fas fa-plane"></i>
+							</div>
+							<div class="interest-details">
+								<h4>States I've Been</h4>
+								<div class="tags">
+									<span class="tag">Pennsylvania</span>
+									<span class="tag">New York</span>
+									<span class="tag">New Jersey</span>
+									<span class="tag">Connecticut</span>
+									<span class="tag">Virginia</span>
+									<span class="tag">Delaware</span>
+									<span class="tag">West Virginia</span>
+									<span class="tag">Maryland</span>
+									<span class="tag">North Carolina</span>
+									<span class="tag">Tennessee</span>
+									<span class="tag">Illinois</span>
+									<span class="tag">Texas</span>
+									<span class="tag">Florida</span>
+									<span class="tag">Georgia</span>
+									<span class="tag">Alabama</span>
+									<span class="tag">Louisiana</span>
+									<span class="tag">Arkansas</span>
+									<span class="tag">Colorado</span>
+									<span class="tag">Arizona</span>
+									<span class="tag">New Mexico</span>
+									
+									<!-- Add more states as needed -->
+								</div>
+								<p class="travel-note">I love exploring new places and trying local food!</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Learning & Growth -->
+				<section class="about-section">
+					<div class="section-header">
+						<i class="fas fa-lightbulb"></i>
+						<h3>Always Learning</h3>
+					</div>
+					<div class="section-content">
+						<p>I believe in learning something new every day. Technology is always changing, and I enjoy keeping up with the latest tools and trends. When I'm not working, you'll find me trying out new coding projects, playing sports, or planning my next travel adventure!</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</article>
+
+	<!-- Education -->
+	<article id="education" class="wrapper style4">
+		<div class="container">
+			<header>
+				<h2>Education</h2>
+			</header>
+			<div class="education-container">
+				<div class="education-card">
+					<div class="edu-icon">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<div class="edu-content">
+						<p class="edu-title">Master of Science in Computer Information Sciences</p>
+						<p class="edu-institution">Harrisburg University of Science and Technology</p>
+						<p class="edu-period">2023 - 2025</p>
+						<div class="edu-details">
+							<div class="course-tags">
+								<span class="tag">Data Engineering</span>
+								<span class="tag">Big Data</span>
+								<span class="tag">System Architecture</span>
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<div class="education-card">
+					<div class="edu-icon">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<div class="edu-content">
+						<p class="edu-title">Bachelor of Science in Computer Science</p>
+						<p class="edu-institution">University of North Texas</p>
+						<p class="edu-period">2015 - 2020</p>
+						<div class="edu-details">
+						
+							<div class="course-tags">
+								<span class="tag">Data Engineering</span>
+								<span class="tag">Big Data</span>
+								<span class="tag">System Architecture</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add your previous education here -->
+				
 			</div>
 		</div>
 	</article>
@@ -356,7 +509,7 @@
 	</article>
 
 	<!-- Resume -->
-	<article id="resume" class="wrapper style2">
+	<article id="resume" class="wrapper style4">
 		<div class="container">
 			<header>
 				<h2>Resume</h2>
@@ -394,10 +547,14 @@
 					<div class="contact-info">
 						<p>Email: pranjolfahim@gmail.com</p>
 						<div class="social-links">
-							<a href="https://www.linkedin.com/in/fis/" class="icon brands fa-linkedin-in"><span
+							<a href="https://www.linkedin.com/in/fis/" class="icon brands fa-linkedin-in" target="_blank"><span
 									class="label">LinkedIn</span></a>
-							<a href="https://github.com/fahimshams" class="icon brands fa-github"><span
+							<a href="https://github.com/fahimshams" class="icon brands fa-github" target="_blank"><span
 									class="label">Github</span></a>
+							<a href="https://medium.com/fahimshams" class="icon brands fa-medium" target="_blank"><span
+										class="label">Medium</span></a>		
+							<a href="https://x.com/fahimshams" class="icon brands fa-twitter" target="_blank"><span
+											class="label">Twitter</span></a>
 						</div>
 					</div>
 				</div>
