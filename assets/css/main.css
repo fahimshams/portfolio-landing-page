@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #222;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -176,6 +176,19 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
+	
+	}
+
+	.about-me-title {
+		font-size: 2em;
+		letter-spacing: -0.015em;
+		color: #111;
+	}
+
+	.technical-skills-title {
+		font-size: 2em;
+		letter-spacing: -0.015em;
+		color: #111;
 	}
 
 	h3 {
@@ -1987,7 +2000,7 @@ input, select, textarea {
 	.wrapper {
 		background-image: none;
 		box-shadow: none;
-		padding: 6em 0;
+		padding: 3em 0;
 		position: relative;
 		overflow: hidden;
 	}
@@ -2021,7 +2034,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-			color: #fff;
+			/* color: #fff; */
 		}
 
 		.wrapper.style4 form input[type=text],
@@ -2095,11 +2108,11 @@ input, select, textarea {
 /* Articles */
 
 	body > article {
-		margin-bottom: 0;
+		margin-bottom: 0.5em;
 	}
 
 	#top {
-		padding: 8em 0 6em;
+		padding: 4em 0 3em;
 		background: var(--gradient-primary);
 		color: var(--white);
 		position: relative;
@@ -2448,20 +2461,20 @@ input, select, textarea {
 
 /* Modern Color Scheme */
 :root {
-    --primary-color: #2D3436;
-    --secondary-color: #0984E3;
-    --accent-color: #00B894;
-    --text-color: #2D3436;
-    --light-text: #636E72;
-    --background-light: #F5F6FA;
-    --background-dark: #2D3436;
-    --white: #FFFFFF;
-    --gradient-primary: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    --text-color: #222;
+    --light-text: #444;
+    --accent-color: #0077b6;
+    --primary-color: #182848;
+    --secondary-color: #4B6CB7;
+    --background-light: #f8f9fa;
+    --background-dark: #23272f;
+    --white: #fff;
+    --gradient-primary: linear-gradient(90deg, #4B6CB7 0%, #182848 100%);
 }
 
 /* Modern Hero Section */
 #top {
-    padding: 8em 0 6em;
+    padding: 4em 0 3em;
     background: var(--gradient-primary);
     color: var(--white);
     position: relative;
@@ -2505,6 +2518,7 @@ header h2 {
     margin-bottom: 0.5em;
     position: relative;
     display: inline-block;
+	color: #fff;
 }
 
 header h2::after {
@@ -2968,6 +2982,12 @@ header h2::after {
     border-radius: 20px;
     font-size: 0.9em;
     margin-bottom: 1em;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
 }
 
 /* Project Grid Styles */
@@ -3720,4 +3740,159 @@ header h2::after {
 
 #nav ul.container li a.active::after {
     width: 100%;
+}
+
+/* Exploring Section Styles */
+.exploring-section {
+    background: var(--background-light);
+    padding: 2em 0 1em 0;
+    margin-top: 1em;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.exploring-section .box.style2 {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    padding: 2em 2em 1.5em 2em;
+    margin-bottom: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exploring-section .box.style2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.exploring-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.exploring-section p {
+    color: var(--light-text);
+    font-size: 1.05em;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .exploring-section {
+        padding: 2em 0 1em 0;
+    }
+    .exploring-section .box.style2 {
+        padding: 1.2em 1em 1em 1em;
+    }
+    .exploring-section h3 {
+        font-size: 1.1em;
+    }
+}
+
+.edu-projects {
+    margin-top: 2em;
+    padding: 1.5em;
+    background: var(--background-light);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.edu-projects-title {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.edu-project {
+    margin-bottom: 1.5em;
+}
+.edu-project:last-child {
+    margin-bottom: 0;
+}
+.edu-project h5,
+.edu-project .project-summary strong {
+    color: #111;
+}
+.edu-project p {
+    color: var(--light-text);
+    margin-bottom: 0.5em;
+}
+.edu-project ul.project-features {
+    margin: 0.5em 0 0.5em 1.2em;
+    padding-left: 1em;
+    color: var(--text-color);
+    font-size: 0.98em;
+}
+.edu-project ul.project-features li {
+    list-style: disc;
+    margin-bottom: 0.3em;
+}
+@media screen and (max-width: 768px) {
+    .edu-projects {
+        padding: 1em;
+    }
+    .edu-projects-title {
+        font-size: 1em;
+    }
+    .edu-project h5 {
+        font-size: 1em;
+    }
+}
+
+.edu-projects,
+.edu-project,
+.edu-projects-title,
+.edu-project h5,
+.edu-project .project-summary,
+.edu-project .project-language,
+.edu-project ul.project-features,
+.edu-project ul.project-features li {
+    color: #111;
+}
+
+.project-tools {
+	background: var(--gradient-primary);
+    color: var(--white) !important;
+    border-radius: 30px;
+    padding: 1em 2.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
+	width: 20;
+
+    box-shadow: 0 4px 15px rgba(9, 132, 227, 0.2);
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 2em;
+ 
+ 
+}
+.project-tools i {
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.project-lang-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background: var(--gradient-primary);
+    color: var(--white) !important;
+    border-radius: 30px;
+    padding: 0.5em 1.3em;
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0 0.5em 0.7em 0;
+    box-shadow: 0 2px 8px rgba(9, 132, 227, 0.12);
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+.project-lang-card i {
+    font-size: 1.2em;
+    color: var(--white);
 }
